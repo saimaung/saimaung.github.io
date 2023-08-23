@@ -67,6 +67,10 @@ body {
     align-items: flex-start;
 }
 
+.job-desc-container svg {
+    width: 10em;
+}
+
 .main-bios p.job-desc {
     font-size: 1.6rem;
     margin: 0;
