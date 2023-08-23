@@ -1,44 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap');
 
 html {
     font-size: 62.5%;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    color: #fff;
-    background-color: #242B3E;
+    background-color: #5A3A2B;
+    font-family: 'Playfair Display', sans-serif;
+    margin: 1.5em;
 }
 
-.wrapper {
-    margin-top: 12em;
-    margin-left: 6.6em;
-}
-
-h1 {
-    font-weight: bold;
-    font-size: 3rem;
-}
-
-h2 {
-    font-weight: 400;
-    font-size: 1.8rem;
-}
-
-h3 {
-    font-weight: 400;
-    font-size: 1.5rem;
-    color: #D4DEF3;
-}
-
-.bio-sections {
+.name-logo {
     display: flex;
-    gap: 2.2em;
+    align-items: center;
+    gap: .3em;
 }
 
-.bio-sections p {
-    text-transform: uppercase;
-    color: #C4D1EC;
-    font-weight: 600;
-    font-size: 1.5rem;
+.name-logo h1 {
+    font-size: 2.6rem;
+    color: #70E2F5;
+}
+
+.bios {
+    border-radius: 1em;
+    border: 1px solid #5EEC5B;
+    background: #7A4F3B;
+    width: 50%;
+    margin: 10em auto;
+}
+
+.bios:hover {
+    cursor: pointer;
+    border: 3px solid #5EEC5B;
+}
+
+.main-bios {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5em;
+    gap: 1.2em;
+}
+
+.main-bios h1 {
+    color: #70E2F5;
+    font-size: 2.4rem;
+    margin: 0;
+}
+
+.main-bios p {
+    color: white;
+    margin: 0;
+}
+
+.main-bios p.job-title {
+    font-size: 2.2rem;
+}
+
+.main-bios p.job-title {
+    font-size: 2.2rem;
+}
+
+.job-desc-container {
+    display: flex;
+    gap: .8em;
+    align-items: flex-start;
+}
+
+.main-bios p.job-desc {
+    font-size: 1.6rem;
+    margin: 0;
 }
