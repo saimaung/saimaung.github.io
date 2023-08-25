@@ -25,39 +25,43 @@ body {
     border-radius: 1em;
     border: 1px solid #5EEC5B;
     background: #7A4F3B;
-    width: 50%;
-    margin: 10em auto;
+    margin: 10em 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
 .bios:hover {
-    cursor: pointer;
     border: 3px solid #5EEC5B;
+}
+
+.family-portrait {
+    border-radius: 1em;
+    max-width: 100%;
 }
 
 .main-bios {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: space-between;
     padding: 5em;
-    gap: 1.2em;
+    gap: 5em;
 }
 
-.main-bios h1 {
+.main-bios-wrapper h1 {
     color: #70E2F5;
     font-size: 2.4rem;
     margin: 0;
 }
 
-.main-bios p {
+.main-bios-wrapper p {
     color: white;
-    margin: 0;
 }
 
-.main-bios p.job-title {
+.main-bios-wrapper p.job-title {
     font-size: 2.2rem;
 }
 
-.main-bios p.job-title {
+.main-bios-wrapper p.job-title {
     font-size: 2.2rem;
 }
 
@@ -74,4 +78,26 @@ body {
 .main-bios p.job-desc {
     font-size: 1.6rem;
     margin: 0;
+}
+
+a.cta {
+    background: #70E2F5;
+    text-decoration: none;
+    border-radius: 1em;
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+}
+
+a.cta:hover {
+    border: 3px solid #5EEC5B;
+}
+
+a.cta p {
+    font-size: 2.6rem;
+    color: #7A4F3B;
+    margin: 0;
+    font-weight: bold;
 }
