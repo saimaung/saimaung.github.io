@@ -49,8 +49,6 @@ body {
 .family-portrait {
     border-radius: 1em;
     max-width: 100%;
-    min-height: 30%;
-    min-width: 30%;
     object-fit: cover;
 }
 
