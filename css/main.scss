@@ -1,0 +1,186 @@
+@use 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap');
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--body-background-color);
+    font-family: 'Playfair Display', sans-serif;
+    margin: 1.5em;
+}
+
+.name-logo {
+    display: flex;
+    align-items: center;
+    gap: .3em;
+
+    h1 {
+        font-size: 2.6rem;
+        color: #70E2F5;
+    }
+
+    svg {
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+}
+
+.bios {
+    margin: 10em 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: .5s;
+
+    .family-portrait {
+        border-radius: 50%;
+        width: 9em;
+        height: 9em;
+        object-fit: cover;
+        position: absolute;
+        top: -50px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 1;
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
+}
+
+.main-bios {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5em;
+    gap: 5em;
+    border-radius: 1em;
+    border: 1px solid #5EEC5B;
+    background: #7A4F3B;
+    position: relative;
+
+    p.job-desc {
+        font-size: 1.6rem;
+        margin: 0;
+    }
+
+    &:hover {
+        border: 3px solid #5EEC5B;
+    }
+}
+
+.main-bios-wrapper {
+    h1 {
+        color: #70E2F5;
+        font-size: 2.4rem;
+        margin: 0;
+    }
+
+    p {
+        color: white;
+        font-size: 2.2rem;
+    }
+}
+
+.job-desc-container {
+    display: flex;
+    gap: .8em;
+    align-items: flex-start;
+    margin: 2em auto;
+    svg {
+        width: 10em;
+    }
+}
+
+a.cta {
+    background: #70E2F5;
+    text-decoration: none;
+    border-radius: 1em;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+
+    &:hover {
+        border: 3px solid #5EEC5B;
+    }
+
+    p {
+        font-size: 2.6rem;
+        color: #7A4F3B;
+        margin: 0;
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width: 744px) {
+
+    .bios {
+        border-radius: 1em;
+        border: 1px solid #5EEC5B;
+        background: #7A4F3B;
+        margin: 10em 0;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        opacity: 0;
+        transform: translateY(-50px);
+        animation: fadeIn 1s forwards;
+        animation-delay: .5s;
+    
+        &:hover {
+            border: 3px solid #5EEC5B;
+        }
+
+        .family-portrait {
+            width: unset;
+            height: unset;
+            border-radius: 1em;
+            max-width: 100%;
+            object-fit: cover;
+            position: unset;
+            top: unset;
+            left: unset;
+            right: unset;
+            margin-left: unset;
+            margin-right: unset;
+            z-index: unset;
+        }
+    }
+
+    .main-bios {
+        border-radius: unset;
+        border: unset;
+        background: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5em;
+        gap: 5em;
+        position: unset;
+    
+        p.job-desc {
+            font-size: 1.6rem;
+            margin: 0;
+        }
+
+        a.cta {
+            align-self: flex-start;
+        }
+
+        &:hover {
+            border: unset;
+        }
+
+    }
+
+    
+}
