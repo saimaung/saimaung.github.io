@@ -31,6 +31,8 @@ body {
   margin: 10em 0;
   animation: fadeIn 1s forwards;
   animation-delay: 0.5s;
+  opacity: 0;
+  transform: translateY(-50px);
 }
 .bios .family-portrait {
   border-radius: 50%;
@@ -45,6 +47,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   z-index: 1;
+  border: 3px solid #70E2F5;
 }
 
 @keyframes fadeIn {
@@ -142,6 +145,7 @@ a.cta p {
     margin-left: unset;
     margin-right: unset;
     z-index: unset;
+    border: unset;
   }
   .main-bios {
     border-radius: unset;
