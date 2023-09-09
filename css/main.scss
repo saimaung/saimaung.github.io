@@ -26,6 +26,18 @@ body {
         width: 2.6rem;
         height: 2.6rem;
     }
+
+    animation: subtleMove 5s alternate-reverse infinite ease-in-out;
+}
+
+@keyframes subtleMove {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(30%);
+    }
 }
 
 .bios {

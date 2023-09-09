@@ -17,6 +17,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.3em;
+  animation: subtleMove 5s alternate-reverse infinite ease-in-out;
 }
 .name-logo h1 {
   font-size: 2.6rem;
@@ -27,6 +28,14 @@ body {
   height: 2.6rem;
 }
 
+@keyframes subtleMove {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(30%);
+  }
+}
 .bios {
   margin: 10em 0;
   animation: fadeIn 1s forwards;
