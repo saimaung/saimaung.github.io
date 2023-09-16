@@ -17,7 +17,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.3em;
-  animation: subtleMove 5s alternate-reverse infinite ease-in-out;
+  animation: subtleMove 5s alternate-reverse ease-in-out;
 }
 .name-logo h1 {
   font-size: 2.6rem;
@@ -143,8 +143,9 @@ a.cta p {
   .bios .family-portrait {
     width: unset;
     height: unset;
-    border-radius: 1em;
+    border-radius: 50%;
     max-width: 100%;
+    max-height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
     position: unset;
@@ -155,6 +156,7 @@ a.cta p {
     margin-right: unset;
     z-index: unset;
     border: unset;
+    border: 3px solid #70E2F5;
   }
   .main-bios {
     border-radius: unset;

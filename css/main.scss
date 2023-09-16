@@ -27,7 +27,7 @@ body {
         height: 2.6rem;
     }
 
-    animation: subtleMove 5s alternate-reverse infinite ease-in-out;
+    animation: subtleMove 5s alternate-reverse ease-in-out;
 }
 
 @keyframes subtleMove {
@@ -158,8 +158,9 @@ a.cta {
         .family-portrait {
             width: unset;
             height: unset;
-            border-radius: 1em;
+            border-radius: 50%;
             max-width: 100%;
+            max-height: 100%;
             object-fit: cover;
             position: unset;
             top: unset;
@@ -169,6 +170,7 @@ a.cta {
             margin-right: unset;
             z-index: unset;
             border: unset;
+            border: 3px solid #70E2F5;
         }
     }
 
